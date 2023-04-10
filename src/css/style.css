@@ -1,0 +1,119 @@
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    background: url("../images/bg-repeat.jpg");
+    background-size: 100% 100%;
+}
+
+main{
+    height: 100vh;
+    margin: auto;
+    max-width: 1440px;
+    display: grid;
+    grid: "container-titulos container-formulario" / 1fr 1fr ;
+}
+
+.titulos {
+    grid-area: container-titulos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.titulos h1{
+    width: 300px;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 11px;
+}
+
+.titulos p{
+    width: 300px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.formulario {
+    grid-area: container-formulario;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario .painel-formulario{
+    width: 340px;
+    height: 380px;
+    padding: 20px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.painel-formulario div{
+    height: 50px;
+}
+
+.painel-formulario input, .painel-formulario textarea{
+    width: 300px;
+    height: 35px;
+    padding-left: 10px;
+    font-weight: 700;
+    font-size: 1.5rem;
+    resize: none;
+}
+
+.painel-formulario .escrita{
+    height: 116px;
+}
+
+.painel-formulario textarea{
+    height: 100px;
+    padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.painel-formulario .obrigatorio-texto{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-bottom: 11px;
+}
+
+.painel-formulario .btn-enviar{
+    height: 41px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: #3CCC87;
+    color: #ffffff;
+    border: none;
+    transition: 0.2s;
+}
+
+.btn-enviar:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.input .obrigatorio{
+    border: 1px red solid;
+    border-radius: 3px;
+}
+
+.input .valido{
+    border: 1px #3FD160 solid;
+    border-radius: 3px;
+}
+
+.painel-formulario small{
+    color: #F63B3B;
+    font-weight: 400;
+    display: none;
+}
+
+.painel-formulario .input .show{
+    display: block;
+}
